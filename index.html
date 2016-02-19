@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <link rel="stylesheet" type="text/css" href="css/supproduct.css">
+    <script src="resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-language="en"
+            data-sap-ui-preload=""
+            data-sap-ui-libs="sap.ui.commons,sap.m,sap.ui.table,sap.ui.ux3"
+            data-sap-ui-theme="sap_bluecrystal"
+
+            data-sap-ui-resourceroots = '{
+                "supproduct" : "./supproduct",
+                "root" : "./"
+            }'
+    >
+    </script>
+
+
+    <script>
+        jQuery.sap.require("root.common");
+
+        new sap.m.Shell("Shell", {
+          app: new sap.ui.core.ComponentContainer({
+              name : 'root'
+          })
+        }).placeAt('content');
+
+    </script>
+
+
+</head>
+<body class="sapUiBody" role="application">
+<div id="content">
+</div>
+</body>
+</html>
